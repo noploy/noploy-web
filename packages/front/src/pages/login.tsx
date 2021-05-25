@@ -25,22 +25,22 @@ export default function Login() {
       <Box maxW="md" mx="auto">
         <Logo mx="auto" h="8" justifyContent="center" mb={{ base: '10', md: '20' }} />
         <Heading textAlign="center" size="xl" fontWeight="extrabold">
-          Acesse a sua conta
+          Login to your account
       </Heading>
         <Text mt="4" mb="8" align="center" maxW="md" fontWeight="medium">
-          <Text as="span">Não tem uma conta?</Text>
-          <Link href="#">Iniciar o teste gratuito</Link>
+          <Text as="span">Don't have an account?</Text>
+          <Link href="#">Start the free trial</Link>
         </Text>
         <Card>
           <LoginForm />
-          <DividerWithText mt="6">ou acesse com</DividerWithText>
+          <DividerWithText mt="6">or access with</DividerWithText>
           <SimpleGrid mt="6" columns={2} spacing="3">
             <Button color="currentColor" variant="outline">
-              <VisuallyHidden>Login com Google</VisuallyHidden>
+              <VisuallyHidden>Login with Google</VisuallyHidden>
               <FaGoogle />
             </Button>
             <Button color="currentColor" variant="outline">
-              <VisuallyHidden>Login com Github</VisuallyHidden>
+              <VisuallyHidden>Login with Github</VisuallyHidden>
               <FaGithub />
             </Button>
           </SimpleGrid>

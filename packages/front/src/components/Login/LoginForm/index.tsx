@@ -19,12 +19,12 @@ export const LoginForm = (props: HTMLChakraProps<'form'>) => (
   >
     <Stack spacing="6">
       <FormControl id="email">
-        <FormLabel>Endereço de E-mail</FormLabel>
+        <FormLabel>E-mail address</FormLabel>
         <Input name="email" type="email" autoComplete="email" required />
       </FormControl>
       <PasswordField />
       <Button type="submit" colorScheme="blue" size="lg" fontSize="md">
-        Entrar
+        Login
       </Button>
     </Stack>
   </chakra.form>

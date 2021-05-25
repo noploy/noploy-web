@@ -11,43 +11,53 @@ export function Navbar() {
   const lightTheme = colorMode === 'light'
 
   return (
-    <Flex justify="space-between">
-      <Flex alignItems="center">
-        <Logo />
+    <Box
+      as="header"
+      w="100%"
+      maxWidth='7xl'
+      h="20"
+      mx="auto"
+      mt="4"
+      px="6"
+    >
+      <Flex justify="space-between">
+        <Flex alignItems="center">
+          <Logo />
+        </Flex>
+        <Flex as={HStack} spacing="6" alignItems="center">
+          <NavLink href="/">Features</NavLink>
+          <NavLink href="/">Pricing</NavLink>
+          <NavLink href="/">Documentantion</NavLink>
+          <HStack spacing="2">
+            <IconButton
+              size="sm"
+              fontSize="18px"
+              aria-label="Twitter"
+              icon={<RiTwitterFill />}
+            />
+            <IconButton
+              size="sm"
+              fontSize="18px"
+              aria-label="Discord"
+              icon={<RiDiscordFill />}
+            />
+            <IconButton
+              size="sm"
+              fontSize="18px"
+              aria-label="Github"
+              icon={<RiGithubFill />}
+            />
+            <IconButton
+              size="sm"
+              fontSize="18px"
+              onClick={toggleColorMode}
+              aria-label="Search database"
+              icon={lightTheme ? <BiMoon /> : <BiSun />}
+            />
+          </HStack>
+          <NavLink href="/login" hasBackground>Login</NavLink>
+        </Flex>
       </Flex>
-      <Flex as={HStack} spacing="6" alignItems="center">
-        <NavLink>Features</NavLink>
-        <NavLink>Pricing</NavLink>
-        <NavLink>Documentation</NavLink>
-        <HStack spacing="2">
-          <IconButton
-            size="sm"
-            fontSize="18px"
-            aria-label="Twitter"
-            icon={<RiTwitterFill />}
-          />
-          <IconButton
-            size="sm"
-            fontSize="18px"
-            aria-label="Discord"
-            icon={<RiDiscordFill />}
-          />
-          <IconButton
-            size="sm"
-            fontSize="18px"
-            aria-label="Github"
-            icon={<RiGithubFill />}
-          />
-          <IconButton
-            size="sm"
-            fontSize="18px"
-            onClick={toggleColorMode}
-            aria-label="Search database"
-            icon={lightTheme ? <BiMoon /> : <BiSun />}
-          />
-        </HStack>
-        <NavLink hasBackground>Login</NavLink>
-      </Flex>
-    </Flex>
+    </Box>
   )
 }
