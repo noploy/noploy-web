@@ -4,6 +4,7 @@ import { RiDiscordFill, RiGithubFill, RiTwitterFill } from 'react-icons/ri'
 
 import { Logo } from './../../Logo/index';
 import { NavLink } from './NavLink';
+import { SocialIcons } from './../../Utils/SocialIcons';
 
 
 export function Navbar() {
@@ -29,24 +30,7 @@ export function Navbar() {
           <NavLink href="/">Pricing</NavLink>
           <NavLink href="/">Documentantion</NavLink>
           <HStack spacing="2">
-            <IconButton
-              size="sm"
-              fontSize="18px"
-              aria-label="Twitter"
-              icon={<RiTwitterFill />}
-            />
-            <IconButton
-              size="sm"
-              fontSize="18px"
-              aria-label="Discord"
-              icon={<RiDiscordFill />}
-            />
-            <IconButton
-              size="sm"
-              fontSize="18px"
-              aria-label="Github"
-              icon={<RiGithubFill />}
-            />
+            <SocialIcons />
             <IconButton
               size="sm"
               fontSize="18px"
