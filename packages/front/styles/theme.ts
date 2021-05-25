@@ -1,17 +1,9 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, ThemeConfig } from '@chakra-ui/react';
 
-export const theme = extendTheme({
+const config: ThemeConfig = {
+  initialColorMode: "light",
+  useSystemColorMode: false,
+}
 
-  fonts: {
-    heading: 'Roboto',
-    body: 'Roboto',
-  },
-  styles: {
-    global: {
-      body: {
-        // bg: 'gray.900',
-        // color: 'gray.50'
-      }
-    }
-  }
-});
+const theme = extendTheme({ config })
+export default theme
