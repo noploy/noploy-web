@@ -38,7 +38,7 @@ export function Footer() {
           <Stack align={'flex-start'}>
             <ListHeaderFooter>Company</ListHeaderFooter>
             <Link href={'#'}>About us</Link>
-            <Link href={'#'}>Status <Badge variant="solid" colorScheme="red">OFFLINE</Badge></Link>
+            <Link href={'#'}>Status <Badge variant="solid" colorScheme="green">ONLINE</Badge></Link>
             <Link href={'#'}>Contact us</Link>
             <Link href={'#'}>Pricing</Link>
             <Link href={'#'}>Testimonials</Link>
