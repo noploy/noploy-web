@@ -11,7 +11,9 @@ import {
   IconButton,
   createIcon,
   IconProps,
-  useColorModeValue,
+  useColorModeValue as mode,
+  Center,
+  SimpleGrid
 } from '@chakra-ui/react';
 
 export function Introduction() {
@@ -54,7 +56,7 @@ export function Introduction() {
               colorScheme={'light'}
               bg={'blue.400'}
               _hover={{ bg: 'blue.500' }}>
-              Deploy for free
+              Start free trial
             </Button>
             <Button
               rounded={'full'}
@@ -78,7 +80,7 @@ export function Introduction() {
             top={'-20%'}
             left={0}
             zIndex={-1}
-            color={useColorModeValue('blue.50', 'blue.400')}
+            color={mode('blue.50', 'blue.400')}
           />
           <Box
             position={'relative'}
@@ -113,6 +115,7 @@ export function Introduction() {
         </Flex>
       </Stack>
     </Container>
+
   );
 }
 

@@ -4,14 +4,9 @@ import { IntegrationItem } from './IntegrationItem';
 
 export function Integrations() {
   return (
-    <Container maxW={'7xl'} mx="auto" py="6">
+    <Container maxW={'7xl'} mx="auto" py="20">
       <Heading
-        lineHeight={1.1}
-        fontWeight='bold'
-        as="h1"
-        fontSize="4xl"
-        textAlign="center"
-        mb="8"
+        align="center" fontWeight="extrabold" mx="auto" mb="8"
       >
         We have integrations with</Heading>
       <SimpleGrid gap="4" minChildWidth="320px" align="flex-start">
