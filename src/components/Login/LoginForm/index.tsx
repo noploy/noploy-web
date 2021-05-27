@@ -2,7 +2,6 @@ import {
   Button,
   FormControl,
   FormLabel,
-  // Input,
   Stack,
   InputGroup,
   Flex,
@@ -13,7 +12,6 @@ import * as yup from 'yup';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup'
 import { Input } from './../../Utils/Input';
-import { useRouter } from 'next/router';
 
 const loginSchema = yup.object().shape({
   email: yup.string().required('E-mail obrigatório').email('E-mail inválido'),
@@ -21,11 +19,11 @@ const loginSchema = yup.object().shape({
 });
 
 export const LoginForm = () => {
-  const router = useRouter();
   const { register, formState, handleSubmit } = useForm({
     resolver: yupResolver(loginSchema)
   });
   const { errors } = formState;
+
 
   const handleLogin = () => {
 
