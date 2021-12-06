@@ -12,7 +12,7 @@ import {
 import { Logo } from './../Logo/index';
 import { ListHeaderFooter } from './ListHeaderFooter';
 import { RiTwitterFill, RiDiscordFill, RiGithubFill } from 'react-icons/ri';
-import { SocialIcons } from './../Utils/SocialIcons';
+import { SocialIcons } from '../utils/SocialIcons';
 
 
 export function Footer() {

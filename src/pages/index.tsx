@@ -1,12 +1,11 @@
-import React from 'react';
-import { Box } from '@chakra-ui/react';
-import { Navbar } from './../components/Header/Navbar/index';
-import { Introduction } from '../components/Home/Introduction/index';
-import { Footer } from './../components/Footer/index';
-import { Integrations } from '../components/Home/Integrations/index';
-import { Pricing } from '../components/Home/Pricing/index';
-import { Features } from './../components/Home/Features/index';
-import { Testimonials } from './../components/Home/Testimonials/index';
+import React from "react";
+import { Box } from "@chakra-ui/react";
+import { Navbar } from "./../components/Header/Navbar";
+import { Introduction } from "../components/Home/Introduction";
+import { Footer } from "./../components/Footer";
+import { Integrations } from "../components/Home/Integrations";
+import { Pricing } from "../components/Home/Pricing";
+import { Features } from "./../components/Home/Features";
 
 export default function Home() {
   return (
@@ -15,9 +14,8 @@ export default function Home() {
       <Introduction />
       <Integrations />
       <Features />
-      <Testimonials />
-      {/* <Pricing /> */}
+      <Pricing />
       <Footer />
     </>
-  )
+  );
 }
